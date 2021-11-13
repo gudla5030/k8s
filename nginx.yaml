@@ -9,10 +9,10 @@ spec:
       ports:
         - ContainerPort: 80
 
-    - name: mysql
-      image: mysql:5.7
-      ports:
-        - ContainerPort: 3306
-      env:
-        - name: MYSQL_ROOT_PASSWORD
-          value: 'Password@123'
+#     - name: mysql
+#       image: mysql:5.7
+#       ports:
+#         - ContainerPort: 3306
+#       env:
+#         - name: MYSQL_ROOT_PASSWORD
+#           value: 'Password@123'
