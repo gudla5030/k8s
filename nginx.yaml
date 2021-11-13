@@ -1,18 +1,23 @@
+--- 
 apiVersion: v1
 kind: Pod
-metadata:
+metadata: 
   name: Hello-Pod
-spec:
-  containers:
-  - name: nginx
-    image: nginx:1.14.2
-    ports:
-    - ContainerPort: 80
-
-  - name: mysql
-    image: mysql:5.7
-    env:
-    - name: MYSQL_ROOT_PASSWORD
-      value: 'Password@123'
-    ports:
-    - ContainerPort: 3306
+spec: 
+  containers: 
+    - 
+      image: "nginx:1.14.2"
+      name: nginx
+      ports: 
+        - 
+          ContainerPort: 80
+    - 
+      env: 
+        - 
+          name: MYSQL_ROOT_PASSWORD
+          value: Password@123
+      image: "mysql:5.7"
+      name: mysql
+      ports: 
+        - 
+          ContainerPort: 3306
