@@ -4,7 +4,15 @@ metadata:
   name: Hello-Pod
 spec:
   containers:
-    - name: nginx
-      image: nginx:1.14.2
-      ports:
-        - ContainerPort: 80
+  - name: nginx
+    image: nginx:1.14.2
+    ports:
+    - ContainerPort: 80
+
+  - name: mysql
+    image: mysql:5.7
+    env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: 'Password@123'
+    ports:
+    - ContainerPort: 3306
