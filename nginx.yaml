@@ -8,11 +8,3 @@ spec:
       image: nginx:1.14.2
       ports:
         - ContainerPort: 80
-
-#     - name: mysql
-#       image: mysql:5.7
-#       ports:
-#         - ContainerPort: 3306
-#       env:
-#         - name: MYSQL_ROOT_PASSWORD
-#           value: 'Password@123'
